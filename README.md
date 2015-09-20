@@ -1,4 +1,6 @@
 # md-rtl-menu
+google-material-design-lite-menu-rtl
+
 edit material design lite menu for right to left (mdl menu rtl)
 
 material design lite website and orginal menu :
