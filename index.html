@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>MDL_RTL_MENU</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/material.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <link rel="stylesheet" href="css/icon.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+    <!-- /*add by hamid naghipour*/ -->
+    <script>
+        $(document).click(function () {
+            if ($(".mdl-layout__drawer").hasClass("is-visible")) {
+                $(".mdl-layout__drawer").removeClass("hide-drawer");
+                $(".mdl-layout__drawer").addClass("right-drawer");
+            }
+            else {
+                $(".mdl-layout__drawer").removeClass("right-drawer");
+                $(".mdl-layout__drawer").addClass("hide-drawer");
+            }
+
+        });
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body dir="rtl">
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">عنوان وب سایت</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">لینک یک</a>
+                <a class="mdl-navigation__link" href="">لینک دو</a>
+                <a class="mdl-navigation__link" href="">لینک سه</a>
+                <a class="mdl-navigation__link" href="">لینک چهار</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">عنوان وب سایت </span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">لینک یک</a>
+            <a class="mdl-navigation__link" href="">لینک دو</a>
+            <a class="mdl-navigation__link" href="">لینک سه</a>
+            <a class="mdl-navigation__link" href="">لینک چهار</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <!-- /*add by hamid naghipour*/ -->
+        <h1 class="mdl-typography--text-center mdl-color-text--white" dir="ltr"> athamid.ir </h1>
+
+        <h2 class="mdl-typography--text-center mdl-color-text--white" dir="ltr">web developer and designer.</h2>
+
+        <p class="mdl-typography--text-center mdl-color-text--white" dir="ltr">all your content here!</p>
+
+    </main>
+</div>
+</body>
+</html>

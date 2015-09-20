@@ -1,0 +1,40 @@
+
+.demo-layout-transparent {
+    background: url('../images/transparent.jpg') center / cover;
+    }
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+       your background is light. */
+    color: white;
+    }
+
+/*add by hamid naghipour*/
+.mdl-layout__drawer-button {
+    direction: ltr;
+    right: 0;
+    margin-left: 20px;
+    }
+
+.mdl-layout__drawer {
+    right: -1000px;
+    transition-duration: .000000001s;
+    transition-timing-function: cubic-bezier(.1, 1000, .1, 100);
+    }
+
+.right-drawer {
+    position: absolute;
+    right: 0;
+    left: 100%;
+    transition: 0.3s;
+    }
+
+.hide-drawer {
+    position: absolute;
+    right: -1000px;
+    }
+
+.mdl-layout-title {
+    margin-right: 49px;
+    }
